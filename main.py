@@ -9,7 +9,11 @@ from typing import List, Optional
 API_KEY = os.environ.get("GOOGLE_SEARCH_API_KEY")
 CX = os.environ.get("GOOGLE_SEARCH_CX")
 
-app = FastAPI(title="Fact Check Search Tool for Dify")
+app = FastAPI(
+    title="Fact Check Tool",
+    description="Google検索を行って証拠を収集するツールです",
+    version="1.0.0"
+)
 
 # --- データモデル定義 ---
 class SearchRequest(BaseModel):
