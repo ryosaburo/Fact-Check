@@ -1,0 +1,4 @@
+fastapi==0.104.1 # 例としてバージョンを指定
+uvicorn[standard]==0.24.0 # 開発・本番実行に必要なサーバー
+requests==2.31.0 # 外部APIを叩くためのHTTPクライアント
+pydantic==2.5.3 # データモデルの検証（FastAPIと連携）
